@@ -10,7 +10,7 @@ window.onload = () => {
     const favBtn = document.getElementById("favorite");
     let btnNext = document.createElement("button");
     let btnPrevious = document.createElement("button");
-    let localMovies = JSON.parse(localStorage.localMovies);
+    let localMovies = JSON.parse(localStorage.localMovies || '[]');
     let page = 1;
 
     btnNext.innerText = "Next";
