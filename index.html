@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-movieDB</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <label class="form__label" for="name">The Open Movie Database</label>
+
+        <div class="form__input-wrapper">
+            <input class="form__input" id="name" type="text">
+
+            <select class="form__select" id="select" name="type">
+                <option class="form__select-option" value="movie">movie</option>
+                <option class="form__select-option" value="series">series</option>
+                <option class="form__select-option" value="episode">episode</option>
+            </select>
+
+            <input id="submit" class="form__submit" type="submit" value="Search">
+            <input id="favorite" class="form__favorite" type="submit" value="Favorite">
+        </div>
+    </div>
+
+    <div id="movie-list" class="movie-list"></div>
+
+    <div id="pagination" class="pagination"></div>
+
+    <div id="nav-buttons" class="nav-buttons"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-overlay">
+            <div class="modal-window">
+                <button id="modal-close" class="modal-close">X</button>
+                <img id="image" alt="poster">
+                <div class="info">
+                    <h1 id="heading"></h1>
+                    <h2 id="year"></h2>
+                    <p id="description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
